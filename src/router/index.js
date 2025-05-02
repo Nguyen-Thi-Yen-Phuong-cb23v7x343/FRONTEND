@@ -18,6 +18,11 @@ const routes = [
     name: "notfound",
     component: () => import("@/views/NotFound.vue"),
   },
+  {
+  path: "/contacts/add", // Định nghĩa route cho trang thêm liên hệ
+  name: "contact.add", // Đặt tên cho route
+  component: () => import("@/views/ContactAdd.vue"), // Import trang ContactAdd.vue
+},
 ];
 
 const router = createRouter({
